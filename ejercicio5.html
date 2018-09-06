@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input type="text" name="calculator" value="">
+    <br>
+    <button class="btn" type="button" name="button" onclick="addUno()">1</button>
+    <button class="btn" type="button" name="button" onclick="addDos()">2</button>
+    <button class="btn" type="button" name="button" onclick="addTres()">3</button>
+    <button class="btn" type="button" name="button" onclick="addCuatro()">4</button>
+    <button class="btn" type="button" name="button" onclick="addCinco()">5</button>
+    <br>
+    <button class="btn" type="button" name="button" onclick="addSeis()">6</button>
+    <button class="btn" type="button" name="button" onclick="addSiete()">7</button>
+    <button class="btn" type="button" name="button" onclick="addOcho()">8</button>
+    <button class="btn" type="button" name="button" onclick="addNueve()">9</button>
+    <button class="btn" type="button" name="button" onclick="addCero()">0</button>
+    <br>
+    <button class="btn" type="button" name="button" onclick="addSuma()">+</button>
+    <button class="btn" type="button" name="button" onclick="addResta()">-</button>
+    <button class="btn" type="button" name="button" onclick="addMult()">*</button>
+    <button class="btn" type="button" name="button" onclick="addDiv()">/</button>
+    <br>
+    <button class="result" type="button" name="result" onclick="calcTotal()">=</button>
+    <button class="btn" type="button" name="button" onclick="clearCalc()">CLR</button>
+
+    <script>
+      var result = document.getElementsByName("result")[0];
+      var calculator = document.getElementsByName("calculator")[0];
+      var calcTotal = function(){
+        calculator.value = eval(calculator.value);
+      }
+      var addUno = function(){
+        calculator.value = calculator.value + 1
+      }
+      var addDos = function(){
+        calculator.value = calculator.value + 2
+      }
+      var addTres = function(){
+        calculator.value = calculator.value + 3
+      }
+      var addCuatro = function(){
+        calculator.value = calculator.value + 4
+      }
+      var addCinco = function(){
+        calculator.value = calculator.value + 5
+      }
+      var addSeis = function(){
+        calculator.value = calculator.value + 6
+      }
+      var addSiete = function(){
+        calculator.value = calculator.value + 7
+      }
+      var addOcho = function(){
+        calculator.value = calculator.value + 8
+      }
+      var addNueve = function(){
+        calculator.value = calculator.value + 9
+      }
+      var addCero = function(){
+        calculator.value = calculator.value + 0
+      }
+      var addSuma = function(){
+        calculator.value = calculator.value + "+"
+      }
+      var addResta = function(){
+        calculator.value = calculator.value + "-"
+      }
+      var addMult = function(){
+        calculator.value = calculator.value + "*"
+      }
+      var addDiv = function(){
+        calculator.value = calculator.value + "/"
+      }
+      var clearCalc = function(){
+        calculator.value = ""
+      }
+    </script>
+  </body>
+</html>
